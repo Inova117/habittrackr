@@ -1,0 +1,59 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+Project: HabitTrackr – Mobile Habit Tracker
+
+Stack: React Native (Expo), TypeScript, React Navigation, Supabase (backend, added later)
+
+Key Rules:
+Purpose:
+Build a clean, mobile-first, production-grade habit tracking app for iOS/Android using React Native with Expo.
+
+Architecture:
+
+Screens in /src/screens
+
+Components in /src/components
+
+Service logic (API/Supabase) in /src/services
+
+All code in TypeScript
+
+Navigation:
+
+Use React Navigation (native stack).
+
+All main flows should have clear navigation.
+
+UI/UX:
+
+Minimal, modern mobile design.
+
+All layouts must be mobile-responsive and touch-friendly.
+
+Add placeholder/mock data for habits, check-ins, users during initial development.
+
+Data:
+
+Use in-memory/mock data for all habit and check-in logic until backend is wired up.
+
+No direct API/network calls until backend milestone.
+
+Development Style:
+
+Prefer functional components with hooks.
+
+Code must be clean, modular, and easy to test.
+
+Add comments where logic is non-trivial.
+
+Security:
+
+No secrets or API keys in source files; use environment variables.
+
+Testing:
+
+
+Prioritize feature completeness and screen flow before backend wiring.

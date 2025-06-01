@@ -1,29 +1,51 @@
 {
   "expo": {
     "name": "HabitTrackr",
-    "slug": "HabitTrackr",
+    "slug": "habittrackr",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "userInterfaceStyle": "automatic",
+    "platforms": ["ios", "android"],
+    "description": "Build meaningful habits with intention. A thoughtful approach to personal growth and daily rituals.",
+    "keywords": ["habits", "mindfulness", "wellness", "personal growth", "daily rituals", "self-care", "intentional living"],
     "splash": {
       "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#7B896F"
     },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.habittrackr.app",
+      "buildNumber": "1",
+      "infoPlist": {
+        "UIBackgroundModes": ["background-processing"],
+        "NSUserNotificationsUsageDescription": "HabitTrackr sends gentle reminders to help you stay consistent with your daily habits and celebrate your progress."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "backgroundColor": "#7B896F"
       },
-      "edgeToEdgeEnabled": true
+      "package": "com.habittrackr.app",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        "android.permission.VIBRATE"
+      ]
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/favicon.png",
+      "bundler": "metro"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "your-project-id-here"
+      }
     }
   }
 }
